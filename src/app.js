@@ -1,7 +1,5 @@
 require('./style.scss')
 
-console.log('js loaded')
-
 const elems = document.getElementsByClassName('animate')
 
 console.log(elems)
