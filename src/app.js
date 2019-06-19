@@ -1,4 +1,4 @@
-require('./style.scss')
+import './style.scss'
 
 const elems = document.getElementsByClassName('animate')
 
