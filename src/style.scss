@@ -1,16 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway&display=swap');
 @import "../node_modules/bulma/css/bulma.css";
 @import "../node_modules/modern-normalize/modern-normalize.css";
+@import "../node_modules/devicon/devicon.css";
+
+$title-font:    'Montserrat', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
+$primary-color: #1f3e50;
+$secondary-color: #0D2F42;
+
+$highlight-color: #ee6123;
+
+.animate{
+  opacity: 0;
+}
+
+.animate.fade{
+  animation-name: fade-in;
+  animation-duration: 5s;
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  0%   {opacity: 0}
+  100% {opacity: 1}
+}
 
 #header-section{
   height: 100vh;
-  background-color: #1f3e50;
+  background-color: $primary-color;
 }
 
 #header-section-title{
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-family: $title-font;
+  font-weight: 400;
   font-size: 100px;
   text-align: right;
   margin-right: 50px;
@@ -20,12 +44,12 @@
 
 #header-section-subtitle{
   color: #9ba8b0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 40px;
   text-align: right;
   margin-right: 50px;
-  border-bottom: 5px solid #ee6123;
+  border-bottom: 5px solid $highlight-color;
   position: relative;
   animation: flyin-bottom  1s ease-out;
 }
@@ -56,6 +80,12 @@
  }
 }
 
+button{
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
 #header-section-subtitle::after {
             content: '';
             display: block;
@@ -63,5 +93,47 @@
             width: 400px;
             bottom: -5px;
             left: 0px;
-            border: 5px solid #1f3e50;
+            border: 5px solid $primary-color;
         }
+
+.section-title{
+  font-family: $title-font;
+  font-size: 60px;
+  color: $secondary-color
+}
+
+.section-title>span{
+  color: $highlight-color;
+}
+
+#about-me-p{
+  font-family: $body-font;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  // opacity: 0;
+}
+
+.skills-icons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-icon-wrapper{
+  margin: 40px;
+  text-align: center;
+}
+
+.skills-icon-wrapper>p{
+  text-align: center;
+  color: $highlight-color;
+  font-family: $title-font;
+}
+
+i{
+  color: $highlight-color;
+  font-size: 4em;
+}
