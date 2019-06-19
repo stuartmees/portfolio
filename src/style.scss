@@ -99,7 +99,8 @@ button{
 .section-title{
   font-family: $title-font;
   font-size: 60px;
-  color: $secondary-color
+  color: $secondary-color;
+  margin-bottom: 50px;
 }
 
 .section-title>span{
@@ -110,7 +111,6 @@ button{
   font-family: $body-font;
   line-height: 1.5;
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 50px;
   font-size: 20px;
   // opacity: 0;
@@ -136,4 +136,42 @@ button{
 i{
   color: $highlight-color;
   font-size: 4em;
+}
+
+.projects-container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.project-column{
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.project-column{
+  background-position: center;
+  background-size: cover;
+}
+
+#pacman-img{
+  background-image: url('/assets/pacman.png');
+}
+
+#moviedb-img{
+  background-image: url('/assets/moviedb.png');
+}
+
+#eventup-img{
+  background-image: url('/assets/eventup.png');
+}
+
+#hiddengem-img{
+  background-image: url('/assets/hiddengem.png');
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .project-reverse {
+      flex-direction: row-reverse;
+  }
 }
