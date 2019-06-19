@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway&display=swap');
 @import "../node_modules/bulma/css/bulma.css";
 @import "../node_modules/modern-normalize/modern-normalize.css";
 @import "../node_modules/devicon/devicon.css";
@@ -110,10 +110,9 @@ button{
 #about-me-p{
   font-family: $body-font;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 50px;
   font-size: 20px;
-  // opacity: 0;
 }
 
 .skills-icons{
@@ -139,8 +138,8 @@ i{
 }
 
 .projects-container{
-  width: 1000px;
   margin: 0 auto;
+  width: 80vw;
 }
 
 .project-column{
@@ -151,6 +150,15 @@ i{
 .project-column{
   background-position: center;
   background-size: cover;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.project-title {
+  font-family: $title-font;
+  text-align: center;
+  color: $secondary-color;
+  font-weight: 600;
 }
 
 #pacman-img{
@@ -173,5 +181,9 @@ i{
 @media only screen and (min-width: 1024px) {
   .project-reverse {
       flex-direction: row-reverse;
+  }
+
+  .projects-container {
+    width: 1000px;
   }
 }
