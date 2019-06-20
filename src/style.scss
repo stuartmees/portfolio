@@ -11,6 +11,12 @@ $secondary-color: #0D2F42;
 
 $highlight-color: #ee6123;
 
+*{
+  font-family: $body-font;
+  line-height: 1.5;
+  text-align: justify;
+}
+
 .animate{
   opacity: 0;
 }
@@ -99,8 +105,12 @@ button{
 .section-title{
   font-family: $title-font;
   font-size: 60px;
-  color: $secondary-color;
+  color: white;
   margin-bottom: 50px;
+}
+
+#about-me-title{
+  color: $secondary-color;
 }
 
 .section-title>span{
@@ -109,8 +119,6 @@ button{
 
 #about-me-p{
   font-family: $body-font;
-  line-height: 1.5;
-  text-align: justify;
   margin-bottom: 50px;
   font-size: 20px;
 }
@@ -137,6 +145,10 @@ i{
   font-size: 4em;
 }
 
+#projects-section{
+  background-color: $secondary-color;
+}
+
 .projects-container{
   margin: 0 auto;
   width: 80vw;
@@ -144,21 +156,18 @@ i{
 
 .project-column{
   height: 300px;
-  margin-bottom: 40px;
-}
-
-.project-column{
+  margin: 40px;
+  color: white;
   background-position: center;
   background-size: cover;
   padding: 10px;
-  border: 1px solid black;
 }
 
 .project-title {
   font-family: $title-font;
   text-align: center;
-  color: $secondary-color;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 #pacman-img{
@@ -177,6 +186,32 @@ i{
   background-image: url('/assets/hiddengem.png');
 }
 
+#contact-section {
+  background-color: $primary-color;
+  color: white;
+}
+
+#contact-section img{
+  border-radius: 50%;
+  max-width: 70%;
+}
+
+#contact-title{
+  margin-bottom: 0px;
+}
+
+#contact-title-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 
 @media only screen and (min-width: 1024px) {
   .project-reverse {
@@ -184,6 +219,6 @@ i{
   }
 
   .projects-container {
-    width: 1000px;
+    width: 1300px;
   }
 }
