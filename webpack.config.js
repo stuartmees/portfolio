@@ -7,8 +7,8 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    filename: 'bundle.js'
+    // publicPath: '/'
   },
   devtool: 'source-maps',
   module: {
