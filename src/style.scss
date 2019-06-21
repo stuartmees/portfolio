@@ -195,7 +195,7 @@ button{
   background-color: $secondary-color;
   border: white 1px solid;
   border-radius: 3px;
-  width: 30%;
+  width: 135px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -249,7 +249,13 @@ button>div{
       flex-direction: row-reverse;
   }
 
-  .projects-container {
-    width: 1300px;
+  #projects-container {
+    max-width: 90vw;
   }
 }
+
+// @media only screen and (max-width: 1024px) {
+//   #projects-container {
+//
+//   }
+// }
