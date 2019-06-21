@@ -119,6 +119,10 @@ $highlight-color: #ee6123;
   font-size: 20px;
 }
 
+#skills-section{
+  padding-bottom: 50px;
+}
+
 .skills-icons{
   display: flex;
   justify-content: center;
@@ -148,15 +152,22 @@ i{
 .projects-container{
   margin: 0 auto;
   width: 80vw;
+
 }
 
 .project-column{
   height: 300px;
   margin: 40px 20px;
   color: white;
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
+  background-position:center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+#projects-container>.columns {
+  background-color: $primary-color;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .project-title {
