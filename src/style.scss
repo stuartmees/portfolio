@@ -102,6 +102,7 @@ $highlight-color: #ee6123;
   font-size: 60px;
   color: white;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 #about-me-title{
@@ -151,7 +152,7 @@ i{
 
 .project-column{
   height: 300px;
-  margin: 40px;
+  margin: 40px 20px;
   color: white;
   background-position: center;
   background-size: cover;
@@ -222,9 +223,15 @@ button>div{
   color: white;
 }
 
-#contact-section img{
+#contact-image img{
   border-radius: 50%;
   max-width: 70%;
+}
+
+#contact-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact-title{
@@ -243,7 +250,7 @@ button>div{
   justify-content: space-around;
 }
 
-
+//Desktop ===========================================================
 @media only screen and (min-width: 1024px) {
   .project-reverse {
       flex-direction: row-reverse;
@@ -252,6 +259,24 @@ button>div{
   #projects-container {
     max-width: 90vw;
   }
+
+  .project-column{
+    margin: 40px;
+  }
+}
+
+
+//Mobile Phone============================================================
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 45px;
+  }
+
+  #contact-details>div {
+    text-align: center;
+  }
+
+
 }
 
 // @media only screen and (max-width: 1024px) {
