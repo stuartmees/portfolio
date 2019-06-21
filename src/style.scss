@@ -204,7 +204,7 @@ i{
 }
 
 button{
-  background-color: $secondary-color;
+  background-color: $primary-color;
   border: white 1px solid;
   border-radius: 3px;
   width: 135px;
@@ -218,6 +218,7 @@ button{
 button:hover{
   color: $highlight-color;
   border-color: $highlight-color;
+  background-color: $secondary-color;
 }
 
 button>i{
