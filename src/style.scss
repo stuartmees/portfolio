@@ -41,8 +41,8 @@ $highlight-color: #ee6123;
 #header-section-title{
   color: white;
   font-family: $title-font;
-  font-weight: 400;
-  font-size: 100px;
+  font-weight: 300;
+  font-size: 80px;
   text-align: right;
   margin-right: 50px;
   padding-top: 100px;
@@ -52,11 +52,11 @@ $highlight-color: #ee6123;
 #header-section-subtitle{
   color: #9ba8b0;
   font-family: $title-font;
-  font-weight: 400;
-  font-size: 40px;
+  font-weight: 300;
+  font-size: 30px;
   text-align: right;
   margin-right: 50px;
-  border-bottom: 5px solid $highlight-color;
+  border-bottom: 3px solid $highlight-color;
   position: relative;
   animation: flyin-bottom  1s ease-out;
 }
@@ -91,7 +91,7 @@ $highlight-color: #ee6123;
             content: '';
             display: block;
             position: absolute;
-            width: 400px;
+            width: 80vw;
             bottom: -5px;
             left: 0px;
             border: 5px solid $primary-color;
@@ -272,15 +272,27 @@ button>div{
     font-size: 45px;
   }
 
+  #header-section-title{
+    font-weight: 400;
+    font-size: 50px;
+    margin-right: 20px;
+    padding-top: 100px;
+  }
+
+  #header-section-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 20px;
+    border-width: 2px;
+  }
+
+  #header-section-subtitle::after {
+              width: 60vw;
+          }
+
   #contact-details>div {
     text-align: center;
   }
 
 
 }
-
-// @media only screen and (max-width: 1024px) {
-//   #projects-container {
-//
-//   }
-// }
