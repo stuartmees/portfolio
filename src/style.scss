@@ -157,7 +157,7 @@ i{
 
 .project-column{
   height: 300px;
-  margin: 40px 20px;
+  margin: 0px 20px;
   color: white;
   background-position:center;
   background-size:contain;
@@ -273,7 +273,7 @@ button>div{
   }
 
   .project-column{
-    margin: 40px;
+    margin: 20px;
   }
 }
 
@@ -301,6 +301,19 @@ button>div{
   #header-section-subtitle::after {
               width: 60vw;
           }
+
+  .project-text{
+    height: auto;
+  }
+
+  .project-img{
+    height: 230px;
+    padding: 0;
+  }
+
+  .project-buttons{
+    padding-top: 15px;
+  }
 
   #contact-details>div {
     text-align: center;
