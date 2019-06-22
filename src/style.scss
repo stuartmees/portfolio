@@ -156,12 +156,13 @@ i{
 }
 
 .project-column{
-  height: 300px;
+  height: auto;
   margin: 0px 20px;
   color: white;
   background-position:center;
   background-size:contain;
   background-repeat: no-repeat;
+
 }
 
 #projects-container>.columns {
@@ -174,6 +175,11 @@ i{
   font-family: $title-font;
   text-align: center;
   font-weight: 600;
+}
+
+.project-text>p  {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #pacman-img{
@@ -264,16 +270,23 @@ button>div{
 
 //Desktop ===========================================================
 @media only screen and (min-width: 1024px) {
-  .project-reverse {
-      flex-direction: row-reverse;
-  }
-
   #projects-container {
     max-width: 90vw;
   }
 
   .project-column{
     margin: 20px;
+  }
+
+  .project-text {
+    margin: 0 20px;
+  }
+}
+
+//Above mobile =========================================================
+@media only screen and (min-width: 769px) {
+  .project-reverse {
+      flex-direction: row-reverse;
   }
 }
 
