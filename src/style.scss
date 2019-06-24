@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway&display=swap');
 @import "../node_modules/bulma/css/bulma.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway&display=swap');
 @import "../node_modules/modern-normalize/modern-normalize.css";
 @import "../node_modules/devicon/devicon.css";
 
@@ -85,6 +85,15 @@ $highlight-color: #ee6123;
  -webkit-transform: translateX(0%); /* Firefox bug fix */
  transform: translateX(0%);
  }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: $highlight-color
 }
 
 #header-section-subtitle::after {
