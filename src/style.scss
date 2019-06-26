@@ -9,6 +9,7 @@ $body-font: 'Raleway', sans-serif;
 $primary-color: #1f3e50;
 $secondary-color: #0D2F42;
 
+// $highlight-color: yellow;
 $highlight-color: #ee6123;
 
 
@@ -114,11 +115,22 @@ a:hover {
   text-align: left;
 }
 
+ul {
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+}
+
+ul>.section-title{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
 #about-me-title{
   color: $secondary-color;
 }
 
-.section-title>span{
+.section-title span{
   color: $highlight-color;
 }
 
