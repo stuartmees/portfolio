@@ -2,7 +2,6 @@ import './style.scss'
 
 const elems = document.getElementsByClassName('animate')
 
-console.log(elems)
 
 function isInView(elem) {
   const docViewTop = window.pageYOffset
