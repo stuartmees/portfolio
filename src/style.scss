@@ -1,0 +1,371 @@
+@import "../node_modules/bulma/css/bulma.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway&display=swap');
+@import "../node_modules/modern-normalize/modern-normalize.css";
+
+$title-font:    'Montserrat', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
+$primary-color: #1f3e50;
+$secondary-color: #0D2F42;
+
+// $highlight-color: yellow;
+$highlight-color: #ee6123;
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: $body-font;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.animate{
+  opacity: 0;
+}
+
+.animate.fade{
+  animation-name: fade-in;
+  animation-duration: 5s;
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  0%   {opacity: 0}
+  100% {opacity: 1}
+}
+
+#header-section{
+  height: 100vh;
+  background-color: $primary-color;
+}
+
+#header-section-title{
+  color: white;
+  font-family: $title-font;
+  font-weight: 300;
+  font-size: 80px;
+  text-align: right;
+  margin-right: 50px;
+  padding-top: 100px;
+  animation: flyin-right  1s ease-out;
+}
+
+#header-section-title>span {
+  color: $highlight-color
+}
+
+#header-section-subtitle{
+  color: #9ba8b0;
+  font-family: $title-font;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 50px;
+  border-bottom: 3px solid $highlight-color;
+  position: relative;
+  animation: flyin-bottom  1s ease-out;
+}
+
+@keyframes flyin-bottom {
+ 0%   {
+ -moz-transform: translateX(300%); /* Firefox bug fix */
+ -webkit-transform: translateX(300%); /* Firefox bug fix */
+ transform: translateY(300%);
+ }
+ 100% {
+ -moz-transform: translateX(0%); /* Firefox bug fix */
+ -webkit-transform: translateX(0%); /* Firefox bug fix */
+ transform: translateY(0%);
+ }
+}
+
+@keyframes flyin-right {
+ 0%   {
+ -moz-transform: translateX(300%); /* Firefox bug fix */
+ -webkit-transform: translateX(300%); /* Firefox bug fix */
+ transform: translateX(50%);
+ }
+ 100% {
+ -moz-transform: translateX(0%); /* Firefox bug fix */
+ -webkit-transform: translateX(0%); /* Firefox bug fix */
+ transform: translateX(0%);
+ }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: $highlight-color
+}
+
+#header-section-subtitle::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80vw;
+            bottom: -5px;
+            left: 0px;
+            border: 5px solid $primary-color;
+        }
+
+.section-title{
+  font-family: $title-font;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+ul {
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+}
+
+ul>.section-title{
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+#about-me-title{
+  color: $secondary-color;
+}
+
+.section-title span{
+  color: $highlight-color;
+}
+
+#about-me-p{
+  font-family: $body-font;
+  font-size: 20px;
+}
+
+#skills-section{
+  padding-bottom: 50px;
+}
+
+.skills-title {
+  text-align: center;
+  color: $highlight-color;
+}
+
+.skills-icons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-icon-wrapper{
+  margin: 40px;
+  text-align: center;
+}
+
+.skills-icon-wrapper>p{
+  text-align: center;
+  color: $highlight-color;
+  font-family: $title-font;
+}
+
+i{
+  color: $highlight-color;
+  font-size: 4em;
+}
+
+#projects-section{
+  background-color: $secondary-color;
+}
+
+.projects-container{
+  margin: 0 auto;
+  width: 80vw;
+
+}
+
+.project-column{
+  height: auto;
+  margin: 0px 20px;
+  color: white;
+  background-position:center;
+  background-size:contain;
+  background-repeat: no-repeat;
+
+}
+
+#projects-container>.columns {
+  background-color: $primary-color;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.project-title {
+  font-family: $title-font;
+  text-align: center;
+  font-weight: 600;
+}
+
+.project-text>p  {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#pacman-img{
+  background-image: url('/assets/pacman.png');
+}
+
+#moviedb-img{
+  background-image: url('/assets/moviedb.png');
+}
+
+#eventup-img{
+  background-image: url('/assets/eventup.png');
+}
+
+#hiddengem-img{
+  background-image: url('/assets/hiddengem.png');
+}
+
+.column.project-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  background-color: $primary-color;
+  border: white 1px solid;
+  border-radius: 3px;
+  width: 135px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  color: white;
+}
+
+button:hover{
+  color: $highlight-color;
+  border-color: $highlight-color;
+  background-color: $secondary-color;
+}
+
+button>i{
+  font-size: 20px;
+  color: inherit;
+}
+
+button>div{
+  text-align: left;
+}
+
+#contact-section {
+  background-color: $primary-color;
+  color: white;
+}
+
+#contact-image img{
+  border-radius: 50%;
+  max-width: 70%;
+}
+
+#contact-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-title{
+  margin-bottom: 0px;
+}
+
+#contact-title-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+//Desktop ===========================================================
+@media only screen and (min-width: 1024px) {
+  #projects-container {
+    max-width: 90vw;
+  }
+
+  .project-column{
+    margin: 20px;
+  }
+
+  .project-text {
+    margin: 0 20px;
+  }
+}
+
+//Above mobile =========================================================
+@media only screen and (min-width: 769px) {
+  .project-reverse {
+      flex-direction: row-reverse;
+  }
+}
+
+
+//Mobile Phone============================================================
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 45px;
+  }
+
+  #header-section-title{
+    font-weight: 400;
+    font-size: 50px;
+    margin-right: 20px;
+    padding-top: 50px;
+  }
+
+  #header-section-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 20px;
+    border-width: 2px;
+  }
+
+  #header-section-subtitle::after {
+              width: 60vw;
+          }
+
+  .project-text{
+    height: auto;
+  }
+
+  .project-img{
+    height: 230px;
+    padding: 0;
+  }
+
+  .project-buttons{
+    padding-top: 15px;
+  }
+
+  #contact-details>div, #contact-details>a {
+    text-align: center;
+  }
+
+  i{
+    color: $highlight-color;
+    font-size: 2em;
+  }
+
+}
